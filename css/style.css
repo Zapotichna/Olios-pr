@@ -1,3 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --mainFont: "Lato";
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 body {
-  background-color: red;
+  margin: 0;
+  font-family: var(--mainFont);
+}
+/* Header */
+.header {
+  height: 100vh;
+  width: 144px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 25px rgba(219, 219, 219, 0.5);
+  background-color: white;
+  overflow-x: hidden;
+}
+.header-logo {
+  margin-bottom: 100px;
+  padding: 33px 51px;
+}
+/* Navigation */
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav-link {
+  display: block;
+  padding: 0 59px;
+  margin: 42px 0;
+  color: #d8d8d8;
+  font-size: 24px;
+}
+.nav-link:hover {
+  color: #0023ff;
+}
+.link-bottom {
+}
+/* Presentation */
+.presentation {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/main-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+.btn {
+  position: relative;
+  margin-top: 57px;
+  margin-right: 57px;
+  padding: 30px;
+  float: right;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+}
+.btn-manu {
+  color: #0023ff;
+}
+.banner {
+  position: relative;
+  padding-top: 100px;
+  margin: 0 auto;
+  max-width: 660px;
+  text-align: center;
+}
+.back-title {
+  font-size: 300px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4.32px;
+  color: #e7e7e7;
+  opacity: 0.7;
+}
+.title {
+  margin-bottom: 55px;
+  font-size: 220px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  color: black;
+}
+.subtitle {
+  margin-bottom: 45px;
+  font-size: 23px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.9px;
+}
+.banner-btn {
+  padding: 20px 52px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  background-color: #0023ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+/* Slider */
+.slider {
+  margin-bottom: 35px;
+  margin-right: 40px;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+.slider-item {
+  flex-direction: column;
+  margin: 22px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 3px solid rgba(207, 207, 207, 0.65);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider-item:hover {
+  background-color: #0023ff;
 }
